@@ -36,7 +36,6 @@ public class HelloWorldServlet extends HttpServlet
 				// TODO Auto-generated catch block
 				e.printStackTrace();
             } 
-            if(handler.output=="")response.getOutputStream().print("'"+command+"' is not recognized as an internal or external command, operable program or batch file.");
-            else response.getOutputStream().print(handler.output);
+            response.getOutputStream().print(handler.output);
       }
 }
